@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Busim Yoga</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <div id="loader">
+
+        <div class="spinner"></div>
+
+    </div>
+
+
+
+    <header>
+
+        <h1>Busim Yoga</h1>
+
+        <button id="darkBtn">
+            Dark Mode
+        </button>
+
+    </header>
+
+
+
+    <div class="topBar">
+
+        <div id="clock"></div>
+
+        <div id="quote">
+            “Yoga is the journey of the self.”
+        </div>
+
+    </div>
+
+
+
+    <section class="hero">
+
+        <h2>Feel Your Inner Peace</h2>
+
+        <p>
+            Yoga & Meditation Studio
+        </p>
+
+    </section>
+
+
+
+    <section class="stats">
+
+        <div class="statCard">
+
+            <h2>9</h2>
+
+            <p>Ders</p>
+
+        </div>
+
+        <div class="statCard">
+
+            <h2 id="memberCount">0</h2>
+
+            <p>Üye</p>
+
+        </div>
+
+        <div class="statCard">
+
+            <h2 id="reservationCount">0</h2>
+
+            <p>Rezervasyon</p>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="searchArea">
+
+        <input type="text"
+               id="searchInput"
+               placeholder="Yoga Ara...">
+
+        <select id="filter">
+
+            <option value="all">
+                Tüm Seviyeler
+            </option>
+
+            <option value="Başlangıç">
+                Başlangıç
+            </option>
+
+            <option value="Orta">
+                Orta
+            </option>
+
+            <option value="İleri">
+                İleri
+            </option>
+
+        </select>
+
+    </section>
+
+
+
+    <section class="cards"> <div class="card" data-level="Başlangıç"> 
+    <img src="https://images.pexels.com/photos/1051838/pexels-photo-1051838.jpeg">
+     <div class="content"> <h3>Morning Yoga</h3>
+     <p>Eğitmen: Ayşe</p> <p>Seviye: Başlangıç</p>
+      <p> Kontenjan: <span class="quota">10</span>
+    </p> <button class="reserveBtn"> Rezervasyon Yap </button> 
+    <button class="favBtn"> ❤️ Favori </button> 
+
+</div> </div>
+ <div class="card" data-level="Orta"> <img src="https://images.pexels.com/photos/3094215/pexels-photo-3094215.jpeg">
+     <div class="content">
+         <h3>Meditation Yoga</h3>
+          <p>Eğitmen: Zeynep</p> <p>Seviye: Orta</p> <p> Kontenjan: <span class="quota">7</span>
+         </p> <button class="reserveBtn"> Rezervasyon Yap </button>
+          <button class="favBtn"> ❤️ Favori </button> </div> </div> 
+          
+          <div class="card" data-level="İleri"> 
+    <img src="https://images.pexels.com/photos/3822906/pexels-photo-3822906.jpeg">
+    <div class="content"> <h3>Power Yoga</h3> <p>Eğitmen: Elif</p> <p>Seviye: İleri</p> 
+    <p> Kontenjan: <span class="quota">5</span> </p> <button class="reserveBtn"> Rezervasyon Yap </button> 
+    <button class="favBtn"> ❤️ Favori </button> </div> </div> 
+     
+    <div class="card" data-level="Başlangıç"> <img src="https://images.pexels.com/photos/1812964/pexels-photo-1812964.jpeg"> <div class="content"> 
+    <h3>Sunset Yoga</h3> <p>Eğitmen: Merve</p> <p>Seviye: Başlangıç</p> 
+    <p> Kontenjan: <span class="quota">12</span>
+</p> <button class="reserveBtn"> Rezervasyon Yap </button> 
+<button class="favBtn"> ❤️ Favori </button> </div> 
+    </div> <div class="card" data-level="Orta">
+<img src="https://images.pexels.com/photos/917732/pexels-photo-917732.jpeg"> <div class="content">
+<h3>Relax Yoga</h3> <p>Eğitmen: Derya</p> <p>Seviye: Orta</p>
+<p> Kontenjan: <span class="quota">9</span>
+</p> <button class="reserveBtn"> Rezervasyon Yap </button> 
+<button class="favBtn"> ❤️ Favori </button> </div> </div> 
+                     
+<div class="card" data-level="İleri">
+<img src="https://images.pexels.com/photos/4325467/pexels-photo-4325467.jpeg"> 
+<div class="content"> <h3>Advanced Balance</h3>
+<p>Eğitmen: Ece</p> <p>Seviye: İleri</p>
+<p> Kontenjan: <span class="quota">4</span> 
+</p> <button class="reserveBtn"> Rezervasyon Yap </button> 
+<button class="favBtn"> ❤️ Favori </button> </div> 
+</div> <div class="card" data-level="Başlangıç">
+<img src="https://images.pexels.com/photos/868704/pexels-photo-868704.jpeg"> <div class="content"> 
+<h3>Breathing Yoga</h3> <p>Eğitmen: Selin</p> 
+<p>Seviye: Başlangıç</p> <p> Kontenjan: <span class="quota">15</span> </p> 
+<button class="reserveBtn"> Rezervasyon Yap </button>
+<button class="favBtn"> ❤️ Favori </button> </div> </div> <div class="card" data-level="Orta"> 
+<img src="https://images.pexels.com/photos/4498606/pexels-photo-4498606.jpeg">
+<div class="content"> <h3>Flexibility Yoga</h3> <p>Eğitmen: Burcu</p>
+<p>Seviye: Orta</p> <p> Kontenjan: <span class="quota">8</span> </p> 
+<button class="reserveBtn"> Rezervasyon Yap </button>
+<button class="favBtn"> ❤️ Favori </button> </div> </div> <div class="card" data-level="İleri"> 
+<img src="https://images.pexels.com/photos/3822356/pexels-photo-3822356.jpeg"> <div class="content">
+<h3>Strong Body Yoga</h3> <p>Eğitmen: Ceren</p> <p>Seviye: İleri</p>
+<p> Kontenjan: <span class="quota">6</span> 
+</p> <button class="reserveBtn"> Rezervasyon Yap </button> 
+<button class="favBtn"> ❤️ Favori </button> </div> </div> </section>
+
+    <section class="reservationBox">
+
+        <h2>Rezervasyonlar</h2>
+
+        <ul id="reservationList"></ul>
+
+    </section>
+
+
+
+    <section class="bmiBox">
+
+        <h2>BMI Hesaplama</h2>
+
+        <input type="number"
+               id="kg"
+               placeholder="Kilo">
+
+        <input type="number"
+               id="boy"
+               placeholder="Boy (1.75)">
+
+        <button id="bmiBtn">
+            Hesapla
+        </button>
+
+        <p id="bmiResult"></p>
+
+    </section>
+
+
+
+    <section class="aiBox">
+
+        <h2>AI Yoga Önerisi</h2>
+
+        <select id="moodSelect">
+
+            <option value="">
+                Ruh Halini Seç
+            </option>
+
+            <option value="stress">
+                Stresli
+            </option>
+
+            <option value="tired">
+                Yorgun
+            </option>
+
+            <option value="happy">
+                Mutlu
+            </option>
+
+        </select>
+
+        <button id="aiBtn">
+            Öneri Ver
+        </button>
+
+        <p id="aiResult"></p>
+
+    </section>
+
+
+
+    <section class="memberBox">
+
+        <h2>Yoga Üyelik Sistemi</h2>
+
+        <input type="text"
+               id="username"
+               placeholder="Kullanıcı Adı">
+
+        <input type="email"
+               id="email"
+               placeholder="E-Posta">
+
+        <button id="registerBtn">
+            Üye Ol
+        </button>
+
+        <p id="memberResult"></p>
+
+    </section>
+
+
+
+    <button id="topBtn">
+        ↑
+    </button>
+
+
+
+    <div id="toast"></div>
+
+
+
+    <footer>
+
+        <h3>Busim Yoga Studio</h3>
+
+        <p>
+            Peace • Meditation • Balance
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
